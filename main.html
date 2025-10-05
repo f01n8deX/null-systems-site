@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NULL Systems — AI-Powered Business Automation</title>
+  <meta name="description" content="NULL Systems builds and automates online micro-businesses: sites, checkouts, content, and reporting." />
+  <meta name="robots" content="index,follow" />
+  <style>
+    :root{
+      --bg:#111; --panel:#1a1a1a; --line:#2a2a2a; --text:#f3f3f3; --muted:#b0b0b0;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:#e6e6e6;text-decoration:none;border-bottom:1px solid #555}
+    .wrap{max-width:980px;margin:0 auto;padding:28px 20px}
+    .nav{display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}
+    .brand{font-weight:800;letter-spacing:.4px}
+    .pill{border:1px solid var(--line);padding:6px 10px;border-radius:999px;color:var(--muted)}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center;padding:32px 0;border-bottom:1px solid var(--line)}
+    h1{font-size:40px;line-height:1.1;margin:0 0 12px}
+    p.lead{color:var(--muted);margin:0 0 16px}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
+    .cta{display:inline-block;background:#222;border:1px solid var(--line);padding:10px 14px;border-radius:10px;font-weight:700}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    h2{margin:28px 0 10px;font-size:22px}
+    ul{padding-left:18px;margin:8px 0;color:var(--muted)}
+    .footer{margin-top:28px;padding:18px 0;border-top:1px solid var(--line);color:#a8a8a8;font-size:14px}
+    .cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    @media (max-width:860px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.cols{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="nav">
+      <div class="brand">NULL Systems</div>
+      <div class="pill">Greyscale • Private beta</div>
+    </div>
+
+    <section class="hero">
+      <div>
+        <h1>AI-Powered Micro-Business Automation</h1>
+        <p class="lead">We generate and operate simple online businesses end-to-end — websites, checkouts, marketing drafts, and weekly reports — so you can focus on approvals and strategy.</p>
+        <a class="cta" href="#contact">Contact</a>
+      </div>
+      <div class="card">
+        <b>What we provide</b>
+        <ul>
+          <li>Landing pages with buy links</li>
+          <li>Product setup & checkout (Stripe/Gumroad)</li>
+          <li>Content plans & social drafts</li>
+          <li>Basic analytics & weekly summaries</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Offer</h2>
+      <div class="grid">
+        <div class="card">
+          <b>Starter Digital Product</b>
+          <p class="lead">One landing page, one checkout link, and a 7-day content plan.</p>
+        </div>
+        <div class="card">
+          <b>Automation Setup</b>
+          <p class="lead">Connect payments, email, and social scheduler with safe approval controls.</p>
+        </div>
+        <div class="card">
+          <b>Reports</b>
+          <p class="lead">Weekly revenue + traffic summary and suggested improvements.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cols" id="contact">
+      <div class="card">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a></p>
+        <p>Location: Your City, State</p>
+      </div>
+      <div class="card">
+        <h2>Policies</h2>
+        <p><a href="#terms">Terms of Service</a> • <a href="#privacy">Privacy Policy</a> • <a href="#refunds">Refunds</a></p>
+      </div>
+    </section>
+
+    <section id="terms">
+      <h2>Terms (Summary)</h2>
+      <p class="lead">Simple overview: digital goods; access delivered via link or email; misuse or unlawful activity is not allowed. Full terms available on request.</p>
+    </section>
+
+    <section id="privacy">
+      <h2>Privacy (Summary)</h2>
+      <p class="lead">We collect minimal info needed to fulfill orders and support customers (e.g., email). Payment data is handled by our processors (e.g., Stripe/Gumroad).</p>
+    </section>
+
+    <section id="refunds">
+      <h2>Refunds (Summary)</h2>
+      <p class="lead">Digital purchases are refundable within 7 days if there’s a delivery or access issue. Contact us at the email above.</p>
+    </section>
+
+    <div class="footer">
+      © <span id="year"></span> NULL Systems — All rights reserved.
+    </div>
+  </div>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
