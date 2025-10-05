@@ -3,79 +3,86 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>NULL Systems — AI Business Automation</title>
-  <meta name="description" content="NULL Systems builds and operates simple online businesses: landing pages, checkout links, content plans, and weekly reports.">
+  <title>NULL Systems — Digital Product Store</title>
+  <meta name="description" content="NULL Systems sells digital automation packs: landing pages + checkout links + content plans. Delivered online via email.">
   <style>
     :root{--bg:#111;--panel:#1a1a1a;--line:#2a2a2a;--text:#f3f3f3;--muted:#b0b0b0}
     *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,Inter,Arial}
     a{color:#eaeaea;text-decoration:none;border-bottom:1px solid #555}
-    .wrap{max-width:920px;margin:0 auto;padding:28px 18px}
+    .wrap{max-width:980px;margin:0 auto;padding:28px 18px}
     .nav{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding:12px 0}
     .brand{font-weight:800;letter-spacing:.3px}
-    .panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px;margin:14px 0}
-    h1{margin:18px 0 6px;font-size:34px} h2{margin:14px 0 8px;font-size:20px}
-    .muted{color:var(--muted)} ul{margin:8px 0 0 18px;color:var(--muted)}
-    .two{display:grid;grid-template-columns:1fr 1fr;gap:14px} @media(max-width:820px){.two{grid-template-columns:1fr}}
+    .muted{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:16px;align-items:center;margin:14px 0}
+    h1{margin:8px 0 6px;font-size:34px} h2{margin:10px 0 8px;font-size:20px}
+    .btn{display:inline-block;background:#202020;border:1px solid var(--line);padding:10px 14px;border-radius:10px;font-weight:700}
+    .price{font-weight:800;font-size:22px;margin:8px 0}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
     .footer{border-top:1px solid var(--line);margin-top:20px;padding-top:12px;color:#aaa;font-size:14px}
+    @media(max-width:860px){.grid{grid-template-columns:1fr};.hero{grid-template-columns:1fr};.two{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
   <div class="wrap">
     <div class="nav">
       <div class="brand">NULL Systems</div>
-      <div class="muted">AI-powered, digitally delivered</div>
+      <div class="muted">Digital products • Stripe payments</div>
     </div>
 
-    <section class="panel">
-      <h1>AI Business Automation</h1>
-      <p class="muted">We build and operate simple online micro-businesses: landing pages, checkout links, content drafts, and weekly performance reports.</p>
-    </section>
-
-    <section class="two">
+    <section class="hero">
       <div class="panel">
-        <h2>What we sell (digital)</h2>
-        <ul>
-          <li>Starter landing page with <b>Stripe checkout link</b></li>
-          <li>Content plan + 10 social post drafts</li>
-          <li>Weekly revenue & traffic summary (PDF or email)</li>
-        </ul>
-        <p class="muted">Delivery is online via website links and email. No physical goods.</p>
+        <h1>Automation Starter Pack</h1>
+        <p class="muted">A ready-to-use bundle to launch a simple online micro-business: landing page template, Stripe checkout link setup guide, and a 10-post content plan.</p>
+        <div class="price">$19 one-time</div>
+        <!-- Replace BUY_URL with your real Stripe Checkout URL later -->
+        <a class="btn" href="BUY_URL" target="_blank" rel="noopener">Buy now (Stripe)</a>
+        <p class="muted" style="margin-top:8px">Delivery: instant download link + email. No physical goods.</p>
       </div>
       <div class="panel">
-        <h2>Example pricing</h2>
-        <ul>
-          <li>Starter Pack — <b>$19</b> one-time</li>
-          <li>Automation Setup — <b>$49</b> one-time</li>
+        <h2>What’s inside</h2>
+        <ul class="muted">
+          <li>Landing page HTML (greyscale, responsive)</li>
+          <li>Checkout link wiring guide (Stripe)</li>
+          <li>10 social post drafts + thumbnail prompts</li>
+          <li>Quick analytics checklist</li>
         </ul>
-        <p class="muted">Pricing may change; final price is shown at checkout.</p>
       </div>
     </section>
 
-    <section class="two">
-      <div class="panel" id="contact">
-        <h2>Contact & Support</h2>
-        <p>Email: <a href="mailto:SUPPORT_EMAIL">SUPPORT_EMAIL</a></p>
-        <p>Business name on statements: <b>STATEMENT_DESCRIPTOR</b></p>
-        <p>Location: CITY, STATE (USA)</p>
-        <p class="muted">Response time: 1–2 business days.</p>
+    <section class="grid">
+      <div class="panel">
+        <h2>Why Stripe</h2>
+        <p class="muted">Secure card processing. We never see or store card details—Stripe handles payment data.</p>
       </div>
+      <div class="panel">
+        <h2>How delivery works</h2>
+        <p class="muted">After purchase you’ll get a link on the success page and an email with your files.</p>
+      </div>
+      <div class="panel">
+        <h2>Support</h2>
+        <p class="muted">Questions? Email <a href="mailto:SUPPORT_EMAIL">SUPPORT_EMAIL</a>. Response in 1–2 business days.</p>
+      </div>
+    </section>
+
+    <section class="two" id="policies">
       <div class="panel">
         <h2>Refunds</h2>
-        <p class="muted">Digital purchases are refundable within <b>7 days</b> if there is a delivery or access issue. Contact support with your order email.</p>
+        <p class="muted">Digital purchases are refundable within <b>7 days</b> if the files aren’t delivered or there’s an access issue. Contact support with your order email.</p>
       </div>
-    </section>
-
-    <section class="panel" id="privacy">
-      <h2>Privacy</h2>
-      <p class="muted">We collect only the information needed to deliver your digital order (e.g., email). Payments are processed securely by <b>Stripe</b>; we do not store card details.</p>
+      <div class="panel">
+        <h2>Privacy</h2>
+        <p class="muted">We collect only what’s needed to fulfill your order (e.g., email). Payments are processed by <b>Stripe</b>. We do not store card numbers.</p>
+      </div>
     </section>
 
     <section class="panel" id="terms">
       <h2>Terms</h2>
-      <p class="muted">By purchasing, you agree to receive digital goods delivered via website links or email. Misuse, redistribution, or unlawful activity is not permitted. For support or refunds, contact us at the email above.</p>
+      <p class="muted">By purchasing, you receive a personal license for the included digital files. Redistribution or resale is not permitted. Business name on statements: <b>STATEMENT_DESCRIPTOR</b>. Location: CITY, STATE (USA).</p>
     </section>
 
-    <div class="footer">© <span id="y"></span> NULL Systems • All rights reserved.</div>
+    <div class="footer">© <span id="y"></span> NULL Systems — All rights reserved.</div>
   </div>
   <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
